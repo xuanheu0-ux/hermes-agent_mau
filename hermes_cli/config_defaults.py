@@ -2671,6 +2671,12 @@ OPTIONAL_ENV_VARS = {
     "GEMINI_API_KEY": _prov("Google AI Studio API key (alias for GOOGLE_API_KEY)", "Gemini API key",
         "https://aistudio.google.com/app/apikey"),
     "GEMINI_BASE_URL": _base_url("Google AI Studio", "Gemini"),
+    "ANTIGRAVITY_API_KEY": _env(
+        "Dedicated Google API key for the Antigravity managed-agent delegation tool "
+        "(antigravity_agent). Leave empty to reuse GEMINI_API_KEY / GOOGLE_API_KEY",
+        "Antigravity agent API key (leave empty to reuse GEMINI_API_KEY)",
+        url="https://aistudio.google.com/apikey", password=True, tools=["antigravity_agent"],
+        category="provider", advanced=True),
     "VERTEX_CREDENTIALS_PATH": _prov(
         "Path to a Google Cloud service account JSON for Vertex AI (Gemini). Vertex uses "
         "OAuth2, not a static API key — this points at the credentials Hermes mints short-lived "
