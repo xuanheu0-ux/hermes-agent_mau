@@ -400,3 +400,6 @@ files with `read_file`):
 
 - `references/cli-docs.md` — condensed notes from the Antigravity 2.x getting
   started, using, features, reference, and headless docs.
+- Running Hermes *inside* Antigravity instead (the reverse direction)? See the
+  Antigravity integration guide (`website/docs/integrations/antigravity.md`):
+  wire `hermes mcp serve` into Antigravity's `mcp_config.json`.

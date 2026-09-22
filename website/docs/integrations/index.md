@@ -76,6 +76,7 @@ Speech-to-text supports eight providers: local faster-whisper (free, runs on-dev
 ## IDE & Editor Integration
 
 - **[IDE Integration (ACP)](../user-guide/features/acp.md)** — Use Hermes Agent inside ACP-compatible editors such as VS Code, Zed, and JetBrains. Hermes runs as an ACP server, rendering chat messages, tool activity, file diffs, and terminal commands inside your editor.
+- **[Antigravity](./antigravity.md)** — Run Hermes inside Google Antigravity 2.0: expose the messaging bridge as an MCP tool server (`hermes mcp serve`) that the Antigravity agent can call across the 2.0 desktop app, the `agy` CLI, and the IDE, or run the `hermes` TUI side-by-side.
 
 ## Programmatic Access
 
